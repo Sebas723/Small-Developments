@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/estilos.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <div class="head-container">
+            <div class="header-img">
+                <img src="img/lotus-978659_1280.jpg" alt="">
+            </div>
+            <ul class="menu">
+                <a href="#">
+                    <li id="algoritms" onclick="algoritmsSelected()">Algoritmos</li>
+                </a>
+                <a href="#">
+                    <li id="technical-test" onclick="technicalSelected()">Pruebas técnicas</li>
+                </a>
+            </ul>
+        </div>
+    </header>
+    <section class="algoritms-main">
+        <h2 class="tittle" id="tittle">Algoritmos</h2>
+
+        <div class="cards-container" id="algoritmsSection">
+            <div class="card">
+                <img src="img/LogoSENA-naranja_PNG-1839613.webp" alt="">
+                <div class="card-content">
+                  <h3>Imprimir "Hola, mundo!"</h3>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur, 
+                    esse. Placeat, porro temporibus? Commodi iste est voluptas odio ea! 
+                    Laboriosam sequi illo obcaecati. Vitae qui ipsa libero id, quis quod 
+                    minus doloribus perspiciatis veniam dignissimos consequuntur expedita 
+                    error? Explicabo sunt, animi, minus impedit porro alias, consequatur cum et maxime totam 
+                    ratione unde. Ipsa atque voluptates id aliquam suscipit dolores quo perferendis quia, ullam, 
+                    eum dolor voluptas dolorem vel expedita maiores sequi? Exercitationem laudantium laboriosam sunt 
+                    molestiae cum, magni, porro similique rem eaque ipsa quas eligendi, ex possimus fuga quidem! Magnam 
+                    fugiat minus nulla corporis distinctio earum eum animi aliquam explicabo.
+                  </p>
+                    <div class="card-button">
+                      <button onclick="firstAlgoritm()">Testear</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+              <img src="img/LogoSENA-naranja_PNG-1839613.webp" alt="">
+              <div class="card-content">
+                <h3>Preguntar un número y mostrarlo en pantalla</h3>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur, 
+                  esse. Placeat, porro temporibus? Commodi iste est voluptas odio ea! 
+                  Laboriosam sequi illo obcaecati. Vitae qui ipsa libero id, quis quod 
+                  minus doloribus perspiciatis veniam dignissimos consequuntur expedita 
+                  error? Explicabo sunt, animi, minus impedit porro alias, consequatur cum et maxime totam 
+                  ratione unde. Ipsa atque voluptates id aliquam suscipit dolores quo perferendis quia, ullam, 
+                  eum dolor voluptas dolorem vel expedita maiores sequi? Exercitationem laudantium laboriosam sunt 
+                  molestiae cum, magni, porro similique rem eaque ipsa quas eligendi, ex possimus fuga quidem! Magnam 
+                  fugiat minus nulla corporis distinctio earum eum animi aliquam explicabo.
+                </p>
+                  <div class="card-button">
+                    <button onclick="secondAlgoritm()">Testear</button>
+                  </div>
+              </div>
+          </div>
+
+          <div class="card">
+            <img src="img/LogoSENA-naranja_PNG-1839613.webp" alt="">
+            <div class="card-content">
+              <h3>Sumar Números</h3>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur, 
+                esse. Placeat, porro temporibus? Commodi iste est voluptas odio ea! 
+                Laboriosam sequi illo obcaecati. Vitae qui ipsa libero id, quis quod 
+                minus doloribus perspiciatis veniam dignissimos consequuntur expedita 
+                error? Explicabo sunt, animi, minus impedit porro alias, consequatur cum et maxime totam 
+                ratione unde. Ipsa atque voluptates id aliquam suscipit dolores quo perferendis quia, ullam, 
+                eum dolor voluptas dolorem vel expedita maiores sequi? Exercitationem laudantium laboriosam sunt 
+                molestiae cum, magni, porro similique rem eaque ipsa quas eligendi, ex possimus fuga quidem! Magnam 
+                fugiat minus nulla corporis distinctio earum eum animi aliquam explicabo.
+              </p>
+                <div class="card-button">
+                  <button onclick="thirdAlgoritm()">Testear</button>
+                </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <img src="img/LogoSENA-naranja_PNG-1839613.webp" alt="">
+            <div class="card-content">
+              <h3>Restar Números</h3>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur, 
+                esse. Placeat, porro temporibus? Commodi iste est voluptas odio ea! 
+                Laboriosam sequi illo obcaecati. Vitae qui ipsa libero id, quis quod 
+                minus doloribus perspiciatis veniam dignissimos consequuntur expedita 
+                error? Explicabo sunt, animi, minus impedit porro alias, consequatur cum et maxime totam 
+                ratione unde. Ipsa atque voluptates id aliquam suscipit dolores quo perferendis quia, ullam, 
+                eum dolor voluptas dolorem vel expedita maiores sequi? Exercitationem laudantium laboriosam sunt 
+                molestiae cum, magni, porro similique rem eaque ipsa quas eligendi, ex possimus fuga quidem! Magnam 
+                fugiat minus nulla corporis distinctio earum eum animi aliquam explicabo.
+              </p>
+                <div class="card-button">
+                  <button onclick="fourthAlgoritm()">Testear</button>
+                </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <img src="img/LogoSENA-naranja_PNG-1839613.webp" alt="">
+            <div class="card-content">
+              <h3>Multiplicar Números</h3>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur, 
+                esse. Placeat, porro temporibus? Commodi iste est voluptas odio ea! 
+                Laboriosam sequi illo obcaecati. Vitae qui ipsa libero id, quis quod 
+                minus doloribus perspiciatis veniam dignissimos consequuntur expedita 
+                error? Explicabo sunt, animi, minus impedit porro alias, consequatur cum et maxime totam 
+                ratione unde. Ipsa atque voluptates id aliquam suscipit dolores quo perferendis quia, ullam, 
+                eum dolor voluptas dolorem vel expedita maiores sequi? Exercitationem laudantium laboriosam sunt 
+                molestiae cum, magni, porro similique rem eaque ipsa quas eligendi, ex possimus fuga quidem! Magnam 
+                fugiat minus nulla corporis distinctio earum eum animi aliquam explicabo.
+              </p>
+                <div class="card-button">
+                  <button onclick="fifthAlgoritm()">Testear</button>
+                </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <img src="img/LogoSENA-naranja_PNG-1839613.webp" alt="">
+            <div class="card-content">
+              <h3>Dividir Números</h3>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur, 
+                esse. Placeat, porro temporibus? Commodi iste est voluptas odio ea! 
+                Laboriosam sequi illo obcaecati. Vitae qui ipsa libero id, quis quod 
+                minus doloribus perspiciatis veniam dignissimos consequuntur expedita 
+                error? Explicabo sunt, animi, minus impedit porro alias, consequatur cum et maxime totam 
+                ratione unde. Ipsa atque voluptates id aliquam suscipit dolores quo perferendis quia, ullam, 
+                eum dolor voluptas dolorem vel expedita maiores sequi? Exercitationem laudantium laboriosam sunt 
+                molestiae cum, magni, porro similique rem eaque ipsa quas eligendi, ex possimus fuga quidem! Magnam 
+                fugiat minus nulla corporis distinctio earum eum animi aliquam explicabo.
+              </p>
+                <div class="card-button">
+                  <button onclick="sixthAlgoritm()">Testear</button>
+                </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <img src="img/LogoSENA-naranja_PNG-1839613.webp" alt="">
+            <div class="card-content">
+              <h3>Calcular área (Rectangulo)</h3>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur, 
+                esse. Placeat, porro temporibus? Commodi iste est voluptas odio ea! 
+                Laboriosam sequi illo obcaecati. Vitae qui ipsa libero id, quis quod 
+                minus doloribus perspiciatis veniam dignissimos consequuntur expedita 
+                error? Explicabo sunt, animi, minus impedit porro alias, consequatur cum et maxime totam 
+                ratione unde. Ipsa atque voluptates id aliquam suscipit dolores quo perferendis quia, ullam, 
+                eum dolor voluptas dolorem vel expedita maiores sequi? Exercitationem laudantium laboriosam sunt 
+                molestiae cum, magni, porro similique rem eaque ipsa quas eligendi, ex possimus fuga quidem! Magnam 
+                fugiat minus nulla corporis distinctio earum eum animi aliquam explicabo.
+              </p>
+                <div class="card-button">
+                  <button onclick="seventhAlgoritm()">Testear</button>
+                </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <img src="img/LogoSENA-naranja_PNG-1839613.webp" alt="">
+            <div class="card-content">
+              <h3>Calcular perimetro (Cuadrado)</h3>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur, 
+                esse. Placeat, porro temporibus? Commodi iste est voluptas odio ea! 
+                Laboriosam sequi illo obcaecati. Vitae qui ipsa libero id, quis quod 
+                minus doloribus perspiciatis veniam dignissimos consequuntur expedita 
+                error? Explicabo sunt, animi, minus impedit porro alias, consequatur cum et maxime totam 
+                ratione unde. Ipsa atque voluptates id aliquam suscipit dolores quo perferendis quia, ullam, 
+                eum dolor voluptas dolorem vel expedita maiores sequi? Exercitationem laudantium laboriosam sunt 
+                molestiae cum, magni, porro similique rem eaque ipsa quas eligendi, ex possimus fuga quidem! Magnam 
+                fugiat minus nulla corporis distinctio earum eum animi aliquam explicabo.
+              </p>
+                <div class="card-button">
+                  <button onclick="eighthAlgoritm()">Testear</button>
+                </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <img src="img/LogoSENA-naranja_PNG-1839613.webp" alt="">
+            <div class="card-content">
+              <h3>Numero par o impar</h3>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur, 
+                esse. Placeat, porro temporibus? Commodi iste est voluptas odio ea! 
+                Laboriosam sequi illo obcaecati. Vitae qui ipsa libero id, quis quod 
+                minus doloribus perspiciatis veniam dignissimos consequuntur expedita 
+                error? Explicabo sunt, animi, minus impedit porro alias, consequatur cum et maxime totam 
+                ratione unde. Ipsa atque voluptates id aliquam suscipit dolores quo perferendis quia, ullam, 
+                eum dolor voluptas dolorem vel expedita maiores sequi? Exercitationem laudantium laboriosam sunt 
+                molestiae cum, magni, porro similique rem eaque ipsa quas eligendi, ex possimus fuga quidem! Magnam 
+                fugiat minus nulla corporis distinctio earum eum animi aliquam explicabo.
+              </p>
+                <div class="card-button">
+                  <button onclick="ninthAlgoritm()">Testear</button>
+                </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <img src="img/LogoSENA-naranja_PNG-1839613.webp" alt="">
+            <div class="card-content">
+              <h3>Convertir de Celsius a Fahrenheit.</h3>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur, 
+                esse. Placeat, porro temporibus? Commodi iste est voluptas odio ea! 
+                Laboriosam sequi illo obcaecati. Vitae qui ipsa libero id, quis quod 
+                minus doloribus perspiciatis veniam dignissimos consequuntur expedita 
+                error? Explicabo sunt, animi, minus impedit porro alias, consequatur cum et maxime totam 
+                ratione unde. Ipsa atque voluptates id aliquam suscipit dolores quo perferendis quia, ullam, 
+                eum dolor voluptas dolorem vel expedita maiores sequi? Exercitationem laudantium laboriosam sunt 
+                molestiae cum, magni, porro similique rem eaque ipsa quas eligendi, ex possimus fuga quidem! Magnam 
+                fugiat minus nulla corporis distinctio earum eum animi aliquam explicabo.
+              </p>
+                <div class="card-button">
+                  <button onclick="tenthAlgoritm()">Testear</button>
+                </div>
+            </div>
+          </div>
+
+
+        </div>
+    </section>
+    
+    <!--  Seccion para las pruebas tecnicas  -->
+    <!--  Seccion para las pruebas tecnicas  -->
+    <!--  Seccion para las pruebas tecnicas  -->
+    <!--  Seccion para las pruebas tecnicas  -->
+    <!--  Seccion para las pruebas tecnicas  -->
+    <section class="algoritms-main">
+      <div class="cards-container" id="technicalSection">
+          <div class="card">
+              <img src="img/lotus-978659_1280.jpg" alt="">
+              <div class="card-content">
+                <h3>Primer ejercicio</h3>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur, 
+                  esse. Placeat, porro temporibus? Commodi iste est voluptas odio ea! 
+                  Laboriosam sequi illo obcaecati. Vitae qui ipsa libero id, quis quod 
+                  minus doloribus perspiciatis veniam dignissimos consequuntur expedita 
+                  error? Explicabo sunt, animi, minus impedit porro alias, consequatur cum et maxime totam 
+                  ratione unde. Ipsa atque voluptates id aliquam suscipit dolores quo perferendis quia, ullam, 
+                  eum dolor voluptas dolorem vel expedita maiores sequi? Exercitationem laudantium laboriosam sunt 
+                  molestiae cum, magni, porro similique rem eaque ipsa quas eligendi, ex possimus fuga quidem! Magnam 
+                  fugiat minus nulla corporis distinctio earum eum animi aliquam explicabo.
+                </p>
+                  <div class="card-button">
+                    <button>Testear</button>
+                  </div>
+              </div>
+          </div>
+      </div>
+    </section>
+</body>
+</html>
+<script src="js/script.js"></script>
+<script src="js/algoritmos_basicos.js"></script>

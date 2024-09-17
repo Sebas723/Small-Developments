@@ -306,3 +306,163 @@ function tenthAlgoritm(){
 
     alert(celsius+"°C en grados Fahrenheit son "+ fahrenheit+"°F");
 }
+
+// 11. Leer tres números y encontrar el mayor.
+
+function eleventhAlgoritm(){
+    var numberOne = Number(prompt("Ingresa el primer numero"));
+    var numberTwo = Number(prompt("Ingresa el segundo numero"));
+    var numberThree = Number(prompt("Ingresa el tercer numero"));
+
+    while(isNaN(numberOne) || isNaN(numberTwo) || isNaN(numberThree)){
+        alert("Solo es posible ingresar numeros");
+        numberOne = Number(prompt("Ingresa el primer numero"));
+        numberTwo = Number(prompt("Ingresa el segundo numero"));
+        numberThree = Number(prompt("Ingresa el tercer numero"));
+    }
+
+    if(numberOne > numberTwo && numberOne > numberThree){
+        alert("El numero mayor es "+numberOne);
+    } else if (numberTwo > numberOne && numberTwo > numberThree){
+        alert("El numero mayor es "+numberTwo);
+    } else if(numberThree > numberTwo && numberThree > numberTwo){
+        alert("El numero mayor es "+numberThree);
+    } else{
+        alert("Los valores tres valores ingresados fueron "+numberOne);
+    }
+}
+
+//12. Leer un número y determinar si es positivo, negativo o cero.
+function twelfthAlgoritm(){
+    var numberOne = Number(prompt("Ingresa un numero"));
+
+    while(isNaN(numberOne)){
+        alert("Solo es posible ingresar numeros");
+        numberOne = Number(prompt("Ingresa un numero"));
+    }
+
+    if(numberOne < 0){
+        alert("El numero "+numberOne+" es negativo");
+    } else if(numberOne > 0){
+        alert("El numero "+numberOne+" es positivo");
+    } else {
+        alert("El numero es cero")
+    }
+}
+
+//13. Generar numeros
+function thirteenthAlgoritm(){
+    var min = Number(prompt("Ingrese desde el cual desea generar la lista"));
+    var max = Number(prompt("Ingrese hasta el cual desea generar la lista"));
+
+    var numbers = "";
+    
+    while(isNaN(min) || isNaN(max)){
+        alert("Solo es posible ingresar numeros");
+        min = Number(prompt("Ingrese desde el cual desea generar la lista"));
+        max = Number(prompt("Ingrese hasta el cual desea generar la lista"));
+    }
+
+    for(min; min <= max; min++){
+        numbers += min +"\n"
+    }
+
+    alert(numbers);
+}
+
+//14. Imprimir la tabla de multiplicar de un número.
+function fourteenthAlgoritm(){
+    var number = Number(prompt("Ingrese el numero del cual desea generar la tabla de multiplicar"));
+
+    var min = Number(prompt("Ingrese el numero desde el cual desea generar la tabla de multiplicar"));
+    var max = Number(prompt("Ingrese el numero hasta el cual desea generar la tabla de multiplicar"));
+
+    var table = "";
+    while(isNaN(number) || isNaN(min) || isNaN(max)){
+        alert("Solo es posible ingresar numeros");
+
+        number = Number(prompt("Ingrese el numero del cual desea generar la tabla de multiplicar"));
+        min = Number(prompt("Ingrese el numero desde el cual desea generar la tabla de multiplicar"));
+        max = Number(prompt("Ingrese el numero hasta el cual desea generar la tabla de multiplicar"));
+    }
+
+    for(min; min <= max; min++){
+        table += number + " x " + min + " = " + number * min + "\n";
+    }
+
+    alert(table);
+}
+
+//15. Calcular el factorial de un número.
+
+function fifteenthAlgoritm() {
+    var number = Number(prompt("Ingrese el número del cual desea generar su factorial"));
+
+    while (isNaN(number)) {
+        alert("Solo es posible ingresar números");
+        number = Number(prompt("Ingrese el número del cual desea generar su factorial"));
+    }
+
+    let factorial = 1;
+    let factorialString = number + "! = ";
+
+    for (let i = number; i > 0; i--) {
+        factorial *= i;
+        if (i === 1) {
+            factorialString += i;
+        } else {
+            factorialString += i + " × ";
+        }
+    }
+
+    factorialString += " = " + factorial;
+    alert(factorialString);
+}
+
+//16. Determinar si un año es bisiesto.
+// PENDIENTE
+// PENDIENTE
+// PENDIENTE
+// PENDIENTE
+// PENDIENTE
+
+function sixteenthAlgoritm(){
+    alert("PENDIENTEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEE");
+}
+
+
+//17. Calcular el promedio de un conjunto de números.
+function seventeenthAlgoritm(){
+    var amount = Number(prompt("Ingrese la cantidad de numeros que desea ingresar"));
+
+    while(isNaN(amount)){
+        alert("Solo es posible ingresar numeros");
+        amount = Number(prompt("Ingrese la cantidad de numeros que desea ingresar"));
+    }
+
+    var output = 0;
+
+    for(let i = 1; i <= amount; i++){
+        var numbers = Number(prompt("Ingrese un numero"));
+
+        while(isNaN(numbers)){
+            alert("Solo es posible ingresar numeros");
+            numbers = Number(prompt("Ingrese un numero"));
+        }
+
+        output += numbers;
+    }
+
+    alert("El promedio de los numeros ingresados es " + output / amount);
+}
+
+//18. Leer una cadena y contar el número de vocales.
+// PENDIENTE
+// PENDIENTE
+// PENDIENTE
+// PENDIENTE
+// PENDIENTE
+
+function eighteenthAlgoritm(){
+    alert("PENDIENTEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEE");
+}

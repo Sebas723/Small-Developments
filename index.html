@@ -14,7 +14,10 @@
             </div>
             <ul class="menu">
                 <a href="#">
-                    <li id="algoritms" onclick="algoritmsSelected()">Algoritmos</li>
+                    <li id="algoritms" onclick="algoritmsSelected()">Algoritmos Basicos</li>
+                </a>
+                <a href="#">
+                  <li id="intermediate-algoritms" onclick="intermediateSelected()">Algoritmos Intermedios</li>
                 </a>
                 <a href="#">
                     <li id="technical-test" onclick="technicalSelected()">Pruebas técnicas</li>
@@ -23,7 +26,11 @@
         </div>
     </header>
     <section class="algoritms-main">
-        <h2 class="tittle" id="tittle">Algoritmos</h2>
+      <div class="tittle-container">
+        <div class="custom-hr"></div>
+        <h2 class="tittle" id="tittle">Algoritmos Basicos</h2>
+        <div class="custom-hr"></div>
+      </div>
 
         <div class="cards-container" id="algoritmsSection">
             <div class="card">
@@ -31,15 +38,11 @@
                 <div class="card-content">
                   <h3>Imprimir "Hola, mundo!"</h3>
                   <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur, 
-                    esse. Placeat, porro temporibus? Commodi iste est voluptas odio ea! 
-                    Laboriosam sequi illo obcaecati. Vitae qui ipsa libero id, quis quod 
-                    minus doloribus perspiciatis veniam dignissimos consequuntur expedita 
-                    error? Explicabo sunt, animi, minus impedit porro alias, consequatur cum et maxime totam 
-                    ratione unde. Ipsa atque voluptates id aliquam suscipit dolores quo perferendis quia, ullam, 
-                    eum dolor voluptas dolorem vel expedita maiores sequi? Exercitationem laudantium laboriosam sunt 
-                    molestiae cum, magni, porro similique rem eaque ipsa quas eligendi, ex possimus fuga quidem! Magnam 
-                    fugiat minus nulla corporis distinctio earum eum animi aliquam explicabo.
+                    Este algoritmo simple consiste en mostrar el texto "Hola, mundo!" en la pantalla. Normalmente 
+                    se utiliza para verificar que el entorno de programación esté configurado correctamente y, existen varias formar de 
+                    mostrar un valor, como pueden ser console.log() que imprime en la consola del navegador o document.write() que muestra
+                    lo que desees directamente en el documento HTML. Para este ejemplo estamos usando alert("Hola, mundo!"), que imprime el valor en una pequeña 
+                    ventana modal.
                   </p>
                     <div class="card-button">
                       <button onclick="firstAlgoritm()">Testear</button>
@@ -52,15 +55,12 @@
               <div class="card-content">
                 <h3>Preguntar un número y mostrarlo en pantalla</h3>
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur, 
-                  esse. Placeat, porro temporibus? Commodi iste est voluptas odio ea! 
-                  Laboriosam sequi illo obcaecati. Vitae qui ipsa libero id, quis quod 
-                  minus doloribus perspiciatis veniam dignissimos consequuntur expedita 
-                  error? Explicabo sunt, animi, minus impedit porro alias, consequatur cum et maxime totam 
-                  ratione unde. Ipsa atque voluptates id aliquam suscipit dolores quo perferendis quia, ullam, 
-                  eum dolor voluptas dolorem vel expedita maiores sequi? Exercitationem laudantium laboriosam sunt 
-                  molestiae cum, magni, porro similique rem eaque ipsa quas eligendi, ex possimus fuga quidem! Magnam 
-                  fugiat minus nulla corporis distinctio earum eum animi aliquam explicabo.
+                  Este algoritmo solicita al usuario que ingrese un número mediante una interfaz de entrada, 
+                  como un cuadro de diálogo o un formulario. Una vez que el usuario proporciona el número, el 
+                  algoritmo lo captura y lo muestra en la pantalla utilizando una función de salida. Es una operación 
+                  básica que permite la interacción con el usuario, recolectando datos y presentándolos de manera clara. 
+                  En esencia, el proceso consiste en solicitar la entrada del usuario, capturar esa entrada y luego desplegarla 
+                  para que el usuario pueda verla.
                 </p>
                   <div class="card-button">
                     <button onclick="secondAlgoritm()">Testear</button>
@@ -73,15 +73,11 @@
             <div class="card-content">
               <h3>Sumar Números</h3>
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur, 
-                esse. Placeat, porro temporibus? Commodi iste est voluptas odio ea! 
-                Laboriosam sequi illo obcaecati. Vitae qui ipsa libero id, quis quod 
-                minus doloribus perspiciatis veniam dignissimos consequuntur expedita 
-                error? Explicabo sunt, animi, minus impedit porro alias, consequatur cum et maxime totam 
-                ratione unde. Ipsa atque voluptates id aliquam suscipit dolores quo perferendis quia, ullam, 
-                eum dolor voluptas dolorem vel expedita maiores sequi? Exercitationem laudantium laboriosam sunt 
-                molestiae cum, magni, porro similique rem eaque ipsa quas eligendi, ex possimus fuga quidem! Magnam 
-                fugiat minus nulla corporis distinctio earum eum animi aliquam explicabo.
+                Este algoritmo se encarga de sumar una serie de números proporcionados por el usuario. Primero, solicita al 
+                usuario que ingrese los números, que pueden ser introducidos uno por uno o en una lista. Luego, captura cada 
+                número y lo acumula en una variable de suma. Finalmente, muestra el resultado total de la suma en la pantalla. 
+                Este proceso implica una entrada de datos, un ciclo para sumar los números y una salida que presenta el resultado 
+                de la suma. Es útil para tareas básicas de cálculo donde se necesita sumar múltiples valores.
               </p>
                 <div class="card-button">
                   <button onclick="thirdAlgoritm()">Testear</button>
@@ -94,15 +90,12 @@
             <div class="card-content">
               <h3>Restar Números</h3>
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur, 
-                esse. Placeat, porro temporibus? Commodi iste est voluptas odio ea! 
-                Laboriosam sequi illo obcaecati. Vitae qui ipsa libero id, quis quod 
-                minus doloribus perspiciatis veniam dignissimos consequuntur expedita 
-                error? Explicabo sunt, animi, minus impedit porro alias, consequatur cum et maxime totam 
-                ratione unde. Ipsa atque voluptates id aliquam suscipit dolores quo perferendis quia, ullam, 
-                eum dolor voluptas dolorem vel expedita maiores sequi? Exercitationem laudantium laboriosam sunt 
-                molestiae cum, magni, porro similique rem eaque ipsa quas eligendi, ex possimus fuga quidem! Magnam 
-                fugiat minus nulla corporis distinctio earum eum animi aliquam explicabo.
+                Este algoritmo se utiliza para restar una serie de números proporcionados por el usuario. Comienza 
+                solicitando al usuario que ingrese los números que se desean restar, típicamente comenzando con un 
+                número inicial del cual se harán las restas sucesivas. Luego, el algoritmo captura cada número y lo 
+                sustrae del total acumulado. Finalmente, muestra el resultado final de la resta en la pantalla. El proceso 
+                incluye una entrada de datos, un ciclo para realizar las restas sucesivas, y una salida que presenta el resultado. 
+                Es útil para operaciones de cálculo en las que se requiere restar varios valores de un número base.
               </p>
                 <div class="card-button">
                   <button onclick="fourthAlgoritm()">Testear</button>
@@ -115,15 +108,13 @@
             <div class="card-content">
               <h3>Multiplicar Números</h3>
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur, 
-                esse. Placeat, porro temporibus? Commodi iste est voluptas odio ea! 
-                Laboriosam sequi illo obcaecati. Vitae qui ipsa libero id, quis quod 
-                minus doloribus perspiciatis veniam dignissimos consequuntur expedita 
-                error? Explicabo sunt, animi, minus impedit porro alias, consequatur cum et maxime totam 
-                ratione unde. Ipsa atque voluptates id aliquam suscipit dolores quo perferendis quia, ullam, 
-                eum dolor voluptas dolorem vel expedita maiores sequi? Exercitationem laudantium laboriosam sunt 
-                molestiae cum, magni, porro similique rem eaque ipsa quas eligendi, ex possimus fuga quidem! Magnam 
-                fugiat minus nulla corporis distinctio earum eum animi aliquam explicabo.
+
+                Este algoritmo está diseñado para multiplicar una serie de números proporcionados por el usuario. 
+                Primero, solicita al usuario que ingrese los números que desea multiplicar, los cuales pueden ser 
+                ingresados uno por uno o en una lista. Luego, el algoritmo captura cada número y lo multiplica por el resultado acumulado. 
+                Finalmente, muestra el producto total en la pantalla. El proceso implica una entrada de datos, un ciclo para multiplicar los
+                números sucesivamente, y una salida que presenta el resultado. Es útil para operaciones de cálculo donde se requiere obtener el 
+                producto de varios valores.
               </p>
                 <div class="card-button">
                   <button onclick="fifthAlgoritm()">Testear</button>
@@ -136,15 +127,13 @@
             <div class="card-content">
               <h3>Dividir Números</h3>
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur, 
-                esse. Placeat, porro temporibus? Commodi iste est voluptas odio ea! 
-                Laboriosam sequi illo obcaecati. Vitae qui ipsa libero id, quis quod 
-                minus doloribus perspiciatis veniam dignissimos consequuntur expedita 
-                error? Explicabo sunt, animi, minus impedit porro alias, consequatur cum et maxime totam 
-                ratione unde. Ipsa atque voluptates id aliquam suscipit dolores quo perferendis quia, ullam, 
-                eum dolor voluptas dolorem vel expedita maiores sequi? Exercitationem laudantium laboriosam sunt 
-                molestiae cum, magni, porro similique rem eaque ipsa quas eligendi, ex possimus fuga quidem! Magnam 
-                fugiat minus nulla corporis distinctio earum eum animi aliquam explicabo.
+                Este algoritmo realiza la división de una serie de números proporcionados por el usuario. Primero, 
+                solicita al usuario que ingrese el número inicial que será el dividendo y, a continuación, los números 
+                con los que se desea dividir. Luego, el algoritmo captura cada divisor y divide el resultado acumulado por 
+                este divisor sucesivamente. Finalmente, muestra el cociente total en la pantalla. Es importante manejar correctamente 
+                las divisiones por cero para evitar errores. El proceso incluye la entrada de datos, un ciclo para realizar las divisiones, 
+                y una salida que presenta el resultado final. Este algoritmo es útil para operaciones en las que se requiere dividir un valor 
+                entre varios números.
               </p>
                 <div class="card-button">
                   <button onclick="sixthAlgoritm()">Testear</button>
@@ -157,15 +146,11 @@
             <div class="card-content">
               <h3>Calcular área (Rectangulo)</h3>
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur, 
-                esse. Placeat, porro temporibus? Commodi iste est voluptas odio ea! 
-                Laboriosam sequi illo obcaecati. Vitae qui ipsa libero id, quis quod 
-                minus doloribus perspiciatis veniam dignissimos consequuntur expedita 
-                error? Explicabo sunt, animi, minus impedit porro alias, consequatur cum et maxime totam 
-                ratione unde. Ipsa atque voluptates id aliquam suscipit dolores quo perferendis quia, ullam, 
-                eum dolor voluptas dolorem vel expedita maiores sequi? Exercitationem laudantium laboriosam sunt 
-                molestiae cum, magni, porro similique rem eaque ipsa quas eligendi, ex possimus fuga quidem! Magnam 
-                fugiat minus nulla corporis distinctio earum eum animi aliquam explicabo.
+                Este algoritmo calcula el área de un rectángulo dado su ancho y alto. Primero, solicita al usuario que 
+                ingrese las dimensiones del rectángulo: el ancho y el alto. Luego, multiplica estos dos valores para obtener 
+                el área. Finalmente, muestra el resultado en la pantalla. El proceso implica la entrada de datos, una 
+                operación matemática (multiplicación) para calcular el área, y una salida que presenta el resultado. Este 
+                algoritmo es útil para tareas que requieren el cálculo de áreas en geometría básica y aplicaciones de diseño.
               </p>
                 <div class="card-button">
                   <button onclick="seventhAlgoritm()">Testear</button>
@@ -178,15 +163,13 @@
             <div class="card-content">
               <h3>Calcular perimetro (Cuadrado)</h3>
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur, 
-                esse. Placeat, porro temporibus? Commodi iste est voluptas odio ea! 
-                Laboriosam sequi illo obcaecati. Vitae qui ipsa libero id, quis quod 
-                minus doloribus perspiciatis veniam dignissimos consequuntur expedita 
-                error? Explicabo sunt, animi, minus impedit porro alias, consequatur cum et maxime totam 
-                ratione unde. Ipsa atque voluptates id aliquam suscipit dolores quo perferendis quia, ullam, 
-                eum dolor voluptas dolorem vel expedita maiores sequi? Exercitationem laudantium laboriosam sunt 
-                molestiae cum, magni, porro similique rem eaque ipsa quas eligendi, ex possimus fuga quidem! Magnam 
-                fugiat minus nulla corporis distinctio earum eum animi aliquam explicabo.
+
+                Este algoritmo calcula el perímetro de un cuadrado dado el valor de uno de sus lados. Primero, 
+                solicita al usuario que ingrese la longitud del lado del cuadrado. Luego, multiplica este valor por 4, 
+                ya que un cuadrado tiene cuatro lados de igual longitud. Finalmente, muestra el resultado del cálculo 
+                del perímetro en la pantalla. El proceso incluye la entrada de datos, una operación matemática 
+                (multiplicación) para determinar el perímetro, y una salida que presenta el resultado. Este algoritmo 
+                es útil para tareas relacionadas con la geometría básica y cálculos de dimensiones de formas cuadradas.
               </p>
                 <div class="card-button">
                   <button onclick="eighthAlgoritm()">Testear</button>
@@ -199,15 +182,12 @@
             <div class="card-content">
               <h3>Numero par o impar</h3>
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur, 
-                esse. Placeat, porro temporibus? Commodi iste est voluptas odio ea! 
-                Laboriosam sequi illo obcaecati. Vitae qui ipsa libero id, quis quod 
-                minus doloribus perspiciatis veniam dignissimos consequuntur expedita 
-                error? Explicabo sunt, animi, minus impedit porro alias, consequatur cum et maxime totam 
-                ratione unde. Ipsa atque voluptates id aliquam suscipit dolores quo perferendis quia, ullam, 
-                eum dolor voluptas dolorem vel expedita maiores sequi? Exercitationem laudantium laboriosam sunt 
-                molestiae cum, magni, porro similique rem eaque ipsa quas eligendi, ex possimus fuga quidem! Magnam 
-                fugiat minus nulla corporis distinctio earum eum animi aliquam explicabo.
+                Este algoritmo determina si un número ingresado por el usuario es par o impar. Primero, 
+                solicita al usuario que ingrese un número. Luego, verifica si el número es divisible por 2 
+                sin dejar un residuo. Esto se hace utilizando el operador módulo (%), que calcula el residuo 
+                de la división del número entre 2. Si el residuo es 0, el número es par; de lo contrario, es impar. 
+                Finalmente, muestra el resultado en la pantalla, indicando si el número es par o impar. Este algoritmo 
+                es útil para clasificar números según su divisibilidad por 2.
               </p>
                 <div class="card-button">
                   <button onclick="ninthAlgoritm()">Testear</button>
@@ -220,15 +200,12 @@
             <div class="card-content">
               <h3>Convertir de Celsius a Fahrenheit.</h3>
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur, 
-                esse. Placeat, porro temporibus? Commodi iste est voluptas odio ea! 
-                Laboriosam sequi illo obcaecati. Vitae qui ipsa libero id, quis quod 
-                minus doloribus perspiciatis veniam dignissimos consequuntur expedita 
-                error? Explicabo sunt, animi, minus impedit porro alias, consequatur cum et maxime totam 
-                ratione unde. Ipsa atque voluptates id aliquam suscipit dolores quo perferendis quia, ullam, 
-                eum dolor voluptas dolorem vel expedita maiores sequi? Exercitationem laudantium laboriosam sunt 
-                molestiae cum, magni, porro similique rem eaque ipsa quas eligendi, ex possimus fuga quidem! Magnam 
-                fugiat minus nulla corporis distinctio earum eum animi aliquam explicabo.
+                Este algoritmo convierte una temperatura de grados Celsius a grados Fahrenheit. Primero, solicita 
+                al usuario que ingrese la temperatura en grados Celsius. Luego, utiliza la fórmula de conversión 
+                para calcular el valor en Fahrenheit. La fórmula es:
+
+                <br>
+                Fahrenheit = (Celsius * 9/5) + 32
               </p>
                 <div class="card-button">
                   <button onclick="tenthAlgoritm()">Testear</button>
@@ -241,15 +218,13 @@
             <div class="card-content">
               <h3>Numero mayor</h3>
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur, 
-                esse. Placeat, porro temporibus? Commodi iste est voluptas odio ea! 
-                Laboriosam sequi illo obcaecati. Vitae qui ipsa libero id, quis quod 
-                minus doloribus perspiciatis veniam dignissimos consequuntur expedita 
-                error? Explicabo sunt, animi, minus impedit porro alias, consequatur cum et maxime totam 
-                ratione unde. Ipsa atque voluptates id aliquam suscipit dolores quo perferendis quia, ullam, 
-                eum dolor voluptas dolorem vel expedita maiores sequi? Exercitationem laudantium laboriosam sunt 
-                molestiae cum, magni, porro similique rem eaque ipsa quas eligendi, ex possimus fuga quidem! Magnam 
-                fugiat minus nulla corporis distinctio earum eum animi aliquam explicabo.
+                Este algoritmo determina el número mayor entre dos valores proporcionados por el usuario. Primero,
+                 solicita al usuario que ingrese dos números. Luego, compara los dos números utilizando una estructura
+                  condicional. Si el primer número es mayor que el segundo, muestra el primer número como el mayor;
+                  si el segundo número es mayor, muestra el segundo número como el mayor. Finalmente, presenta el
+                  resultado en la pantalla. Este proceso incluye la entrada de datos, una comparación de los 
+                  números, y una salida que muestra cuál de los dos números es el mayor. Este algoritmo es útil 
+                  para comparaciones simples entre dos valores numéricos.
               </p>
                 <div class="card-button">
                   <button onclick="eleventhAlgoritm()">Testear</button>
@@ -262,15 +237,12 @@
             <div class="card-content">
               <h3>Positivo, negativo o cero</h3>
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur, 
-                esse. Placeat, porro temporibus? Commodi iste est voluptas odio ea! 
-                Laboriosam sequi illo obcaecati. Vitae qui ipsa libero id, quis quod 
-                minus doloribus perspiciatis veniam dignissimos consequuntur expedita 
-                error? Explicabo sunt, animi, minus impedit porro alias, consequatur cum et maxime totam 
-                ratione unde. Ipsa atque voluptates id aliquam suscipit dolores quo perferendis quia, ullam, 
-                eum dolor voluptas dolorem vel expedita maiores sequi? Exercitationem laudantium laboriosam sunt 
-                molestiae cum, magni, porro similique rem eaque ipsa quas eligendi, ex possimus fuga quidem! Magnam 
-                fugiat minus nulla corporis distinctio earum eum animi aliquam explicabo.
+                Este algoritmo clasifica un número ingresado por el usuario como positivo, negativo o cero. Primero, 
+                solicita al usuario que ingrese un número. Luego, utiliza una estructura condicional para verificar 
+                el valor del número. Si el número es mayor que cero, lo clasifica como positivo; si es menor que cero, 
+                lo clasifica como negativo; y si es igual a cero, lo clasifica como cero. Finalmente, muestra el resultado
+                en la pantalla. Este proceso incluye la entrada de datos, una serie de comparaciones, y una salida que 
+                indica la categoría del número. Este algoritmo es útil para clasificar números en función de su signo.
               </p>
                 <div class="card-button">
                   <button onclick="twelfthAlgoritm()">Testear</button>
@@ -284,15 +256,12 @@
             <div class="card-content">
               <h3>Generar lista de numeros</h3>
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur, 
-                esse. Placeat, porro temporibus? Commodi iste est voluptas odio ea! 
-                Laboriosam sequi illo obcaecati. Vitae qui ipsa libero id, quis quod 
-                minus doloribus perspiciatis veniam dignissimos consequuntur expedita 
-                error? Explicabo sunt, animi, minus impedit porro alias, consequatur cum et maxime totam 
-                ratione unde. Ipsa atque voluptates id aliquam suscipit dolores quo perferendis quia, ullam, 
-                eum dolor voluptas dolorem vel expedita maiores sequi? Exercitationem laudantium laboriosam sunt 
-                molestiae cum, magni, porro similique rem eaque ipsa quas eligendi, ex possimus fuga quidem! Magnam 
-                fugiat minus nulla corporis distinctio earum eum animi aliquam explicabo.
+                Este algoritmo genera una lista de números basada en los parámetros proporcionados por el usuario. 
+                Primero, solicita al usuario que ingrese el número inicial, el número final y el incremento deseado para la lista. 
+                Luego, utiliza un bucle para iterar desde el número inicial hasta el número final, añadiendo el incremento en cada 
+                iteración para generar los números de la lista. Finalmente, muestra la lista completa de números en la pantalla. Este 
+                proceso incluye la entrada de datos, la generación de la lista mediante un bucle, y una salida que presenta la lista de 
+                números generada. Este algoritmo es útil para crear secuencias numéricas en función de los parámetros especificados por el usuario.
               </p>
                 <div class="card-button">
                   <button onclick="thirteenthAlgoritm()">Testear</button>
@@ -305,15 +274,15 @@
             <div class="card-content">
               <h3>Generar tabla multiplicar</h3>
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur, 
-                esse. Placeat, porro temporibus? Commodi iste est voluptas odio ea! 
-                Laboriosam sequi illo obcaecati. Vitae qui ipsa libero id, quis quod 
-                minus doloribus perspiciatis veniam dignissimos consequuntur expedita 
-                error? Explicabo sunt, animi, minus impedit porro alias, consequatur cum et maxime totam 
-                ratione unde. Ipsa atque voluptates id aliquam suscipit dolores quo perferendis quia, ullam, 
-                eum dolor voluptas dolorem vel expedita maiores sequi? Exercitationem laudantium laboriosam sunt 
-                molestiae cum, magni, porro similique rem eaque ipsa quas eligendi, ex possimus fuga quidem! Magnam 
-                fugiat minus nulla corporis distinctio earum eum animi aliquam explicabo.
+
+                Este algoritmo genera una tabla de multiplicar para un número específico ingresado por el usuario. Primero, 
+                solicita al usuario que ingrese el número para el cual desea generar la tabla de multiplicar. Luego, 
+                utiliza un bucle para iterar desde un numero especifico pedido al usuario hasta otro numero especifico que ingresa el usuario, 
+                multiplicando el número ingresado por cada valor del bucle. Los resultados de cada multiplicación se almacenan y se muestran en 
+                formato de tabla. Finalmente, presenta la tabla de multiplicar completa en la pantalla. Este proceso incluye la entrada de datos, 
+                la generación de las multiplicaciones mediante un bucle, y una salida que muestra la tabla de multiplicar. Este algoritmo es útil 
+                para visualizar las tablas de multiplicar de manera organizada.
+                
               </p>
                 <div class="card-button">
                   <button onclick="fourteenthAlgoritm()">Testear</button>
@@ -326,15 +295,12 @@
             <div class="card-content">
               <h3>Generar factorial de un numero</h3>
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur, 
-                esse. Placeat, porro temporibus? Commodi iste est voluptas odio ea! 
-                Laboriosam sequi illo obcaecati. Vitae qui ipsa libero id, quis quod 
-                minus doloribus perspiciatis veniam dignissimos consequuntur expedita 
-                error? Explicabo sunt, animi, minus impedit porro alias, consequatur cum et maxime totam 
-                ratione unde. Ipsa atque voluptates id aliquam suscipit dolores quo perferendis quia, ullam, 
-                eum dolor voluptas dolorem vel expedita maiores sequi? Exercitationem laudantium laboriosam sunt 
-                molestiae cum, magni, porro similique rem eaque ipsa quas eligendi, ex possimus fuga quidem! Magnam 
-                fugiat minus nulla corporis distinctio earum eum animi aliquam explicabo.
+                Este algoritmo calcula el factorial de un número entero ingresado por el usuario. Primero, solicita al usuario
+                que ingrese un número entero positivo. Luego, utiliza un bucle para multiplicar todos los números enteros positivos
+                desde 1 hasta el número ingresado. El resultado de estas multiplicaciones es el factorial del número. Finalmente,
+                muestra el resultado en la pantalla. El proceso incluye la entrada de datos, el cálculo del factorial mediante
+                un bucle, y una salida que presenta el resultado del cálculo. Este algoritmo es útil para calcular el factorial, 
+                que es el producto de todos los números enteros positivos hasta un valor dado.
               </p>
                 <div class="card-button">
                   <button onclick="fifteenthAlgoritm()">Testear</button>
@@ -345,17 +311,16 @@
           <div class="card">
             <img src="img/LogoSENA-naranja_PNG-1839613.webp" alt="">
             <div class="card-content">
-              <h3>Determianr si un año es biciesto</h3>
+              <h3>Invertir cadenas de texto</h3>
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur, 
-                esse. Placeat, porro temporibus? Commodi iste est voluptas odio ea! 
-                Laboriosam sequi illo obcaecati. Vitae qui ipsa libero id, quis quod 
-                minus doloribus perspiciatis veniam dignissimos consequuntur expedita 
-                error? Explicabo sunt, animi, minus impedit porro alias, consequatur cum et maxime totam 
-                ratione unde. Ipsa atque voluptates id aliquam suscipit dolores quo perferendis quia, ullam, 
-                eum dolor voluptas dolorem vel expedita maiores sequi? Exercitationem laudantium laboriosam sunt 
-                molestiae cum, magni, porro similique rem eaque ipsa quas eligendi, ex possimus fuga quidem! Magnam 
-                fugiat minus nulla corporis distinctio earum eum animi aliquam explicabo.
+
+                Este algoritmo invierte una cadena de texto proporcionada por el usuario. Primero, 
+                solicita al usuario que ingrese una cadena de texto. Luego, el algoritmo utiliza una técnica para invertir 
+                la cadena, que puede implicar recorrer la cadena desde el final hacia el principio y construir una nueva 
+                cadena con los caracteres en orden inverso. Finalmente, muestra la cadena invertida en la pantalla. 
+                El proceso incluye la entrada de datos, la inversión de la cadena utilizando un bucle o métodos de manipulación de cadenas, 
+                y una salida que presenta la cadena invertida. Este algoritmo es útil para tareas que requieren la inversión del 
+                orden de los caracteres en una cadena de texto.
               </p>
                 <div class="card-button">
                   <button onclick="sixteenthAlgoritm()">Testear</button>
@@ -368,15 +333,13 @@
             <div class="card-content">
               <h3>Determinar promedio</h3>
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur, 
-                esse. Placeat, porro temporibus? Commodi iste est voluptas odio ea! 
-                Laboriosam sequi illo obcaecati. Vitae qui ipsa libero id, quis quod 
-                minus doloribus perspiciatis veniam dignissimos consequuntur expedita 
-                error? Explicabo sunt, animi, minus impedit porro alias, consequatur cum et maxime totam 
-                ratione unde. Ipsa atque voluptates id aliquam suscipit dolores quo perferendis quia, ullam, 
-                eum dolor voluptas dolorem vel expedita maiores sequi? Exercitationem laudantium laboriosam sunt 
-                molestiae cum, magni, porro similique rem eaque ipsa quas eligendi, ex possimus fuga quidem! Magnam 
-                fugiat minus nulla corporis distinctio earum eum animi aliquam explicabo.
+                Este algoritmo calcula el promedio de una serie de números proporcionados por el usuario. Primero, 
+                solicita al usuario que ingrese la cantidad de números para los cuales se desea calcular el promedio. 
+                Luego, pide al usuario que ingrese cada uno de los números. Una vez que todos los números han sido ingresados, 
+                el algoritmo suma todos los valores y divide la suma por la cantidad de números para obtener el promedio. Finalmente,
+                muestra el promedio en la pantalla. El proceso incluye la entrada de datos, la suma de los números, la división para 
+                calcular el promedio, y una salida que presenta el resultado. Este algoritmo es útil para determinar el promedio aritmético
+                de un conjunto de valores numéricos.
               </p>
                 <div class="card-button">
                   <button onclick="seventeenthAlgoritm()">Testear</button>
@@ -389,15 +352,12 @@
             <div class="card-content">
               <h3>Calcular el numero de vocales</h3>
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur, 
-                esse. Placeat, porro temporibus? Commodi iste est voluptas odio ea! 
-                Laboriosam sequi illo obcaecati. Vitae qui ipsa libero id, quis quod 
-                minus doloribus perspiciatis veniam dignissimos consequuntur expedita 
-                error? Explicabo sunt, animi, minus impedit porro alias, consequatur cum et maxime totam 
-                ratione unde. Ipsa atque voluptates id aliquam suscipit dolores quo perferendis quia, ullam, 
-                eum dolor voluptas dolorem vel expedita maiores sequi? Exercitationem laudantium laboriosam sunt 
-                molestiae cum, magni, porro similique rem eaque ipsa quas eligendi, ex possimus fuga quidem! Magnam 
-                fugiat minus nulla corporis distinctio earum eum animi aliquam explicabo.
+                Este algoritmo cuenta el número de vocales en una cadena de texto proporcionada por el usuario.
+                Primero, solicita al usuario que ingrese una cadena de texto. Luego, recorre cada carácter de la cadena
+                y verifica si es una vocal (a, e, i, o, u) en minúscula o mayúscula. Utiliza un contador para llevar la 
+                cuenta de las vocales encontradas. Finalmente, muestra el total de vocales en la pantalla. El proceso incluye
+                la entrada de datos, la iteración sobre los caracteres de la cadena, la verificación y conteo de vocales, y una 
+                salida que presenta el número total de vocales. Este algoritmo es útil para analizar y contar vocales en un texto.
               </p>
                 <div class="card-button">
                   <button onclick="eighteenthAlgoritm()">Testear</button>
@@ -405,16 +365,55 @@
             </div>
           </div>
 
+          <div class="card">
+            <img src="img/LogoSENA-naranja_PNG-1839613.webp" alt="">
+            <div class="card-content">
+              <h3>Determinar si es palindromo</h3>
+              <p>
+                Este algoritmo determina si una cadena de texto ingresada por el usuario es un palíndromo, 
+                que es una secuencia que se lee igual de izquierda a derecha que de derecha a izquierda. Primero, 
+                solicita al usuario que introduzca una cadena de texto. Luego, normaliza la cadena al eliminar 
+                espacios y convertir todos los caracteres a minúsculas para facilitar la comparación. A continuación, 
+                compara la cadena normalizada con su versión invertida. Si ambas cadenas son iguales, el algoritmo 
+                concluye que la cadena es un palíndromo; de lo contrario, no lo es. Finalmente, muestra un mensaje indicando 
+                si la cadena es un palíndromo o no. Este algoritmo es útil para identificar secuencias de caracteres que tienen 
+                simetría en su lectura.
+              </p>
+                <div class="card-button">
+                  <button onclick="nineteenthAlgoritm()">Testear</button>
+                </div>
+            </div>
+          </div>
+
+
+          <div class="card">
+            <img src="img/LogoSENA-naranja_PNG-1839613.webp" alt="">
+            <div class="card-content">
+              <h3>Generar numeros aleatorios</h3>
+              <p>
+                Este algoritmo genera números aleatorios dentro de un rango especificado. Primero, 
+                se solicita al usuario que introduzca los límites del rango (mínimo y máximo). A continuación, el algoritmo utiliza 
+                una función para generar un número aleatorio dentro de ese rango, garantizando que los números generados sean enteros. 
+                Finalmente, se muestra el número aleatorio generado en pantalla, y este proceso se puede repetir cuantas veces sea necesario 
+                para obtener diferentes resultados aleatorios. Esto es útil para generar datos al azar en simulaciones, juegos u otras aplicaciones
+                que requieran aleatoriedad.
+              </p>
+                <div class="card-button">
+                  <button onclick="twentiethAlgortim()">Testear</button>
+                </div>
+            </div>
+          </div>
+
         </div>
     </section>
-    
-    <!--  Seccion para las pruebas tecnicas  -->
-    <!--  Seccion para las pruebas tecnicas  -->
-    <!--  Seccion para las pruebas tecnicas  -->
-    <!--  Seccion para las pruebas tecnicas  -->
-    <!--  Seccion para las pruebas tecnicas  -->
+
+    <!-- Algoritmos nivel intermedio -->
+    <!-- Algoritmos nivel intermedio -->
+    <!-- Algoritmos nivel intermedio -->
+    <!-- Algoritmos nivel intermedio -->
+    <!-- Algoritmos nivel intermedio -->
     <section class="algoritms-main">
-      <div class="cards-container" id="technicalSection">
+      <div class="cards-container" id="intermediateSection">
           <div class="card">
               <img src="img/lotus-978659_1280.jpg" alt="">
               <div class="card-content">
@@ -437,7 +436,59 @@
           </div>
       </div>
     </section>
+    
+    <!--  Seccion para las pruebas tecnicas  -->
+    <!--  Seccion para las pruebas tecnicas  -->
+    <!--  Seccion para las pruebas tecnicas  -->
+    <!--  Seccion para las pruebas tecnicas  -->
+    <!--  Seccion para las pruebas tecnicas  -->
+    <section class="algoritms-main">
+      <div class="cards-container" id="technicalSection">
+          <div class="card">
+              <img src="img/LogoSENA-naranja_PNG-1839613.webp" alt="">
+              <div class="card-content">
+                <h3>Calculadora</h3>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur, 
+                  esse. Placeat, porro temporibus? Commodi iste est voluptas odio ea! 
+                  Laboriosam sequi illo obcaecati. Vitae qui ipsa libero id, quis quod 
+                  minus doloribus perspiciatis veniam dignissimos consequuntur expedita 
+                  error? Explicabo sunt, animi, minus impedit porro alias, consequatur cum et maxime totam 
+                  ratione unde. Ipsa atque voluptates id aliquam suscipit dolores quo perferendis quia, ullam, 
+                  eum dolor voluptas dolorem vel expedita maiores sequi? Exercitationem laudantium laboriosam sunt 
+                  molestiae cum, magni, porro similique rem eaque ipsa quas eligendi, ex possimus fuga quidem! Magnam 
+                  fugiat minus nulla corporis distinctio earum eum animi aliquam explicabo.
+                </p>
+                  <div class="card-button">
+                    <button onclick="calculadora()">Testear</button>
+                  </div>
+              </div>
+          </div>
+
+          <div class="card">
+            <img src="img/LogoSENA-naranja_PNG-1839613.webp" alt="">
+            <div class="card-content">
+              <h3>Prueba tecnica cheppz</h3>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur, 
+                esse. Placeat, porro temporibus? Commodi iste est voluptas odio ea! 
+                Laboriosam sequi illo obcaecati. Vitae qui ipsa libero id, quis quod 
+                minus doloribus perspiciatis veniam dignissimos consequuntur expedita 
+                error? Explicabo sunt, animi, minus impedit porro alias, consequatur cum et maxime totam 
+                ratione unde. Ipsa atque voluptates id aliquam suscipit dolores quo perferendis quia, ullam, 
+                eum dolor voluptas dolorem vel expedita maiores sequi? Exercitationem laudantium laboriosam sunt 
+                molestiae cum, magni, porro similique rem eaque ipsa quas eligendi, ex possimus fuga quidem! Magnam 
+                fugiat minus nulla corporis distinctio earum eum animi aliquam explicabo.
+              </p>
+                <div class="card-button">
+                  <button onclick="calculadora()">Testear</button>
+                </div>
+            </div>
+        </div>
+      </div>
+    </section>
 </body>
 </html>
 <script src="js/script.js"></script>
 <script src="js/algoritmos_basicos.js"></script>
+<script src="js/pruebas_tecnicas.js"></script>

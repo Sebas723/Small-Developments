@@ -419,15 +419,21 @@ function fifteenthAlgoritm() {
     alert(factorialString);
 }
 
-//16. Determinar si un año es bisiesto.
-// PENDIENTE
-// PENDIENTE
-// PENDIENTE
-// PENDIENTE
-// PENDIENTE
+//16. Invertir una cadena.
 
 function sixteenthAlgoritm(){
-    alert("PENDIENTEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEE");
+    var word = prompt("Ingrese palabras o numeros");
+
+    var array = [];
+       
+    for (let letra of word) {
+        array.push(letra);
+    }
+
+    array.reverse();
+
+    alert(array.join(""));
+
 }
 
 
@@ -456,13 +462,107 @@ function seventeenthAlgoritm(){
     alert("El promedio de los numeros ingresados es " + output / amount);
 }
 
-//18. Leer una cadena y contar el número de vocales.
-// PENDIENTE
-// PENDIENTE
-// PENDIENTE
-// PENDIENTE
-// PENDIENTE
 
+//18. Leer una cadena y contar el número de vocales.
 function eighteenthAlgoritm(){
-    alert("PENDIENTEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEE");
+    var word = String(prompt("Ingrese una palabra"));
+
+    while (!/^[a-zA-Z]+$/.test(word)) {
+        alert("Solo es posible ingresar letras");
+        word = prompt("Ingrese una palabra");
+    }
+
+    word = word.toLowerCase();
+    var  letters = "";
+
+    var counter = 0;
+
+    for (let letra of word) {
+        letters += letra + "";
+        
+        switch(letra){
+            case "a":
+                counter += 1;
+            break;
+            case "e":
+                counter += 1;
+            break;
+            case "i":
+                counter += 1;
+            break;
+            case "o":
+                counter += 1;
+            break;
+            case "u":
+                counter += 1;
+            break;
+            default:
+            break;
+        }
+    }
+    alert("La palabra " + letters + " tiene " + counter + " vocales");
+}
+
+// 20. Verificar si una cadena es un palíndromo.
+
+function nineteenthAlgoritm(){
+    var word = prompt("Ingrese palabras o numeros");
+
+    var array = [];
+       
+    for (let letra of word) {
+        array.push(letra);
+    }
+
+    var arrayReversed = array.reverse();
+    arrayReversed = array.join("");
+
+    if(arrayReversed === word){
+        alert("La palabra " + word + " es un palindromo");
+    } else{
+        alert("La palabra " + word + " no es palindromo");
+    }
+}
+
+// 22. Generar números aleatorios.
+
+function twentiethAlgortim() {
+    var amount = Number(prompt("Ingresa la cantidad de números a generar"));
+
+    var min = Number(prompt("Ingresa el valor mínimo"));
+    var max = Number(prompt("Ingresa el valor máximo"));
+
+    //Validacion para los numeros
+    while(isNaN(amount) || isNaN(min) || isNaN(max)){
+        alert("los valores ingresados deben ser numeros");
+        amount = Number(prompt("Ingresa la cantidad de números a generar"));
+        
+        min = Number(prompt("Ingresa el valor mínimo"));
+        max = Number(prompt("Ingresa el valor máximo"));
+    }
+
+    //Validacion para que la cantidad de los numeros no sea mayor al rango de numeros
+    while(amount > max - min){
+        alert("la cantidad de numeros debe ser coherente con el rango minimo y maximo");
+        amount = Number(prompt("Ingresa la cantidad de números a generar"));
+        
+        min = Number(prompt("Ingresa el valor mínimo"));
+        max = Number(prompt("Ingresa el valor máximo"));
+    }
+
+
+    if (min >= max) {
+        alert("El valor mínimo debe ser menor que el valor máximo.");
+        return;
+    }
+
+
+    var numbers = "";
+    for (let i = 0; i < amount; i++) {
+        let randomNumber = Math.floor(Math.random() * (max - min + 1)) + min;
+        numbers += randomNumber + "\n";
+    }
+
+
+    alert(numbers);
 }

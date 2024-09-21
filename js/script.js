@@ -45,3 +45,9 @@ function intermediateSelected(){
     intermediateSection.style.display = "";
 }
 
+
+// Redirecciones desde js
+function redirectPokedex(){
+    window.location.href = "pokedex.html";
+}
+

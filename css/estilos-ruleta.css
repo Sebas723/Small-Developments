@@ -1,0 +1,215 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root{
+    --default-blue: rgb(10, 35, 104);
+    --blue-light: #dbefff;
+}
+
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: Poppins;
+    font-size: 12px;
+    overflow-x: hidden;
+    background-color: var(--blue-light);
+}
+
+a{
+    text-decoration: none;
+}
+
+header{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    z-index: 10;
+    font-size: 18px;
+    background-color: var(--default-blue);
+}
+
+
+.menu a{
+    position: relative;
+    text-decoration: none;
+    color: white;
+    margin: 0 40px 0 80px;
+}
+
+.menu a::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background: linear-gradient(to right,#f1683a, #f1683a);
+    z-index: 1;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.5s ease-in-out;
+}
+
+.menu a:hover::before {
+    transform: scaleX(1);
+}
+
+/* pruebas con el contendor de la ruleta*/
+ .container{
+    position: relative;
+    width: 800px;
+    height: 800px;
+    margin: 50px 0 0 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container::before{
+    content: "";
+    position: absolute;
+    top: 110px;
+    width: 80px;
+    height: 90px;
+    background-color: red;
+    z-index: 10;
+    clip-path: polygon(50% 0%, 65% 50%, 50% 100%, 35% 50%);
+}
+
+.roullete{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border: solid 5px var(--blue-light);
+    border-radius: 50%;
+    box-shadow: 0 0 10px var(--blue-light);
+    transition: transform 10s ease-in-out;
+    overflow: hidden;
+    background-image: url(../img/8557048-banner-casino-online-per-sito-web-con-pulsante-smartphone-chip-poker-e-carte-da-gioco-in-scena-blu-vettoriale.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.roullete span{
+    position: absolute;
+    left: calc(50% - 1px);
+    width: 2px;
+    height: 100%;
+    background-color: var(--blue-light);
+    filter: drop-shadow(0 0 5px var(--blue-light));
+    transform: rotate(calc(45deg * var(--i)));
+}
+
+.spin-button{
+    position: absolute;
+    background-color: #dbefff;
+    width: 20%;
+    height: 20%;
+    z-index: 10;
+    border-radius: 50%;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    font-size: 25px;
+    font-weight: 900;
+    cursor: pointer;
+}
+
+.rewards{
+    position: absolute;
+    rotate: 22deg;
+    inset: 0;
+}
+
+.rewards b{
+    position: absolute;
+    inset: 10px;
+    transform: rotate(calc(45deg * var(--i)));
+    text-align: center;
+    font-size: 50px;
+    font-weight: 900;
+    color: var(--blue-light);
+    filter: drop-shadow(0 0 5px var(--blue-light));
+}
+
+.inside{
+    position: absolute;
+    width: 460px;
+    height: 460px;
+    background-image: url(../img/8557048-banner-casino-online-per-sito-web-con-pulsante-smartphone-chip-poker-e-carte-da-gioco-in-scena-blu-vettoriale.jpg);
+    background-position: center;
+    background-size: cover;
+    color: var(--blue-light);
+    border: solid 3px var(--blue-light);
+    transition: transform 10s ease-in-out;
+}
+
+
+section{
+    display: flex;
+    gap: 70px;
+    align-items: center;
+}
+
+.info-container{
+    width: 40vw;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.info-container h2{
+    font-size: 6em;
+    font-weight: 800;
+    letter-spacing: 5px;
+    color: var(--default-blue);
+    margin: 0;
+}
+
+
+.info-container .text{
+    font-size: 18px;
+    font-weight: 400;
+    margin: 0;
+    color: var(--default-blue);
+}
+
+/* FOOTER */
+
+footer{
+    background-color: rgb(10, 35, 104);
+    width: 100vw;
+    margin-top: 100px;
+    color: white;
+}
+
+footer .footer-container{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    margin: auto;
+    padding: 16px;
+    gap: 10px;
+}
+
+footer .footer-container .column{
+    display: flex;
+    flex-direction: row;
+    gap: 100px;
+}
+
+footer .footer-container .column img{
+    margin: auto;
+}
+
+.custom-hr{
+    width: 100%;
+    margin: auto;
+    height: 1px;
+    background-color: white;
+}

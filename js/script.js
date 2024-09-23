@@ -51,3 +51,8 @@ function redirectPokedex(){
     window.location.href = "pokedex.html";
 }
 
+
+function redirectCasino(){
+    window.location.href = "index-casino.html";
+}
+

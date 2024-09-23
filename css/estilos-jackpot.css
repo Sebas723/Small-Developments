@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+:root{
+    --default-blue: rgb(10, 35, 104);
+    --blue-light: #dbefff;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: Poppins;
+    font-size: 12px;
+    overflow-x: hidden;
+    background-color: var(--blue-light);
+}
+
+a{
+    text-decoration: none;
+}
+
+header{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    z-index: 10;
+    font-size: 18px;
+    background-color: var(--default-blue);
+}
+
+
+.menu a{
+    position: relative;
+    text-decoration: none;
+    color: #eee;
+    margin: 0 40px 0 80px;
+}
+
+.menu a::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background: linear-gradient(to right,#f1683a, #f1683a);
+    z-index: 1;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.5s ease-in-out;
+}
+
+.menu a:hover::before {
+    transform: scaleX(1);
+}
+
+/* jackpot */
+
+section{
+    position: relative;
+    width: 100vw;
+    display: flex;
+    padding: 32px;
+    gap: 100px;
+}
+
+.slots{
+    width: 40vw;
+    height: 600px;
+    border: solid 1px black;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.slots .reel{
+    border: solid 1px black;
+    width: 18%;
+    height: 100%;
+    background-image: url(https://assets.codepen.io/439000/slotreel.webp);
+    background-size: cover;
+    background-position: 0 0;
+    background-repeat: repeat-y;
+}
+
+.text-container{
+    width: 40%;
+}
+
+.text-container h2{
+    font-size: 6em;
+    font-weight: 800;
+    letter-spacing: 5px;
+    color: var(--default-blue);
+    margin: 0;
+}
+
+.text-container .text{
+    font-size: 18px;
+    font-weight: 400;
+    margin: 0;
+    color: var(--default-blue);
+}
+
+.text-container .github-buttons button {
+    background-color: rgb(10, 35, 104);
+    padding: 10px 40px 10px 40px;
+    border: none;
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    transition: .5s;
+}
+
+
+.text-container .github-buttons button:hover{
+    border-color: white;
+    cursor: pointer;
+    background-color: rgb(87, 111, 179);
+    color: white;
+}
+
+
+/* FOOTER */
+
+footer{
+    background-color: rgb(10, 35, 104);
+    width: 100vw;
+    margin-top: 100px;
+    color: white;
+}
+
+footer .footer-container{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    margin: auto;
+    padding: 16px;
+    gap: 10px;
+}
+
+footer .footer-container .column{
+    display: flex;
+    flex-direction: row;
+    gap: 100px;
+}
+
+footer .footer-container .column img{
+    margin: auto;
+}
+
+.custom-hr{
+    width: 100%;
+    margin: auto;
+    height: 1px;
+    background-color: white;
+}
